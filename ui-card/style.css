@@ -21,6 +21,7 @@ body {
 }
 .card .card-img {
     position: relative;
+    transition: 0.5s;
 }
 .card .card-img .date {
     position: absolute;
@@ -43,12 +44,14 @@ body {
 }
 .card .card-text {
     padding: 25px;
+    transition: 0.5s;
 }
 .card .card-text .title {
     font-size: 23px;
     font-weight: 700;
     line-height: 1.5;
     color: #131618;
+    text-decoration: none;
 }
 .card .card-text .desc {
     line-height: 1.6;
@@ -77,4 +80,27 @@ body {
 }
 .card .card-text .btn:hover::after {
     width: 100%;
+}
+.card:hover {
+    background: yellow;
+}
+.card:hover .card-img {
+    padding: 20px;
+    padding-left: 0;
+    margin-left: -20px;
+}
+.card:hover .card-text {
+    background: blue;
+    margin: 20px;
+    margin-top: 0;
+    margin-right: -20px;
+    
+}
+.card:hover .card-text .title,
+.card:hover .card-text .desc,
+.card:hover .card-text .btn {
+    color: #fff;
+}
+.card:hover .card-text .btn::after {
+    background: #fff;
 }
