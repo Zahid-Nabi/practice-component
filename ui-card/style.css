@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    box-shadow: 5px 15px 15px rgba(0,0,0, 0.3);
+    background: #fff;
+}
+.card .card-img {
+    position: relative;
+}
+.card .card-img .date {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: blue;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.card .card-img .date span {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.card .card-img .image img {
+    width: 100%;
+    height: auto;
+}
+.card .card-text {
+    padding: 25px;
+}
+.card .card-text .title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #131618;
+}
+.card .card-text .desc {
+    line-height: 1.6;
+    color: #333;
+    margin: 15px 0;
+}
+.card .card-text .btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:#131618;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.card .card-text .btn::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #131618;
+    transition: 0.5s;
+}
+.card .card-text .btn:hover::after {
+    width: 100%;
+}
