@@ -16,6 +16,7 @@ body {
     width: 350px;
     position: relative;
     overflow: hidden;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.7);
 }
 .card .card-image img {
     width: 100%;
@@ -53,11 +54,11 @@ body {
 }
 .card:hover .card-content::before {
     top: 3%;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .card:hover .card-content::after {
     bottom: 3%;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .card-content .content-box {
     color: #fff;
